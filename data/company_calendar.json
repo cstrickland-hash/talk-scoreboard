@@ -1,0 +1,136 @@
+{
+ "events": [
+  {
+   "start": "2026-10-16T10:00:00-10:00",
+   "end": "2026-10-16T12:00:00-10:00",
+   "title": "Fill the room Call Battle",
+   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
+  },
+  {
+   "start": "2026-10-19T09:30:00-10:00",
+   "end": "2026-10-19T10:00:00-10:00",
+   "title": "Elite Coaching",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-10-19T10:00:00-10:00",
+   "end": "2026-10-19T10:45:00-10:00",
+   "title": "Monday Mastery Meeting",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-10-20T09:15:00-10:00",
+   "end": "2026-10-20T11:15:00-10:00",
+   "title": "Lead Gen Workshop [David Hwang - Sellers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-10-20T10:00:00-10:00",
+   "end": "2026-10-20T14:00:00-10:00",
+   "title": "New Agent Onboarding: Day 5",
+   "loc": "Location TBA"
+  },
+  {
+   "start": "2026-10-22T10:00:00-10:00",
+   "end": "2026-10-22T14:00:00-10:00",
+   "title": "New Agent Onboarding: Day 6!",
+   "loc": "2752 Woodlawn Dr Ste 5-202"
+  },
+  {
+   "start": "2026-10-22T16:00:00-10:00",
+   "end": "2026-10-22T18:00:00-10:00",
+   "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-10-26T09:30:00-10:00",
+   "end": "2026-10-26T10:00:00-10:00",
+   "title": "Elite Coaching",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-10-26T10:00:00-10:00",
+   "end": "2026-10-26T10:45:00-10:00",
+   "title": "Monday Mastery Meeting",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-10-27T09:15:00-10:00",
+   "end": "2026-10-27T11:15:00-10:00",
+   "title": "Lead Gen Workshop [David Hwang - Sellers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-10-29T09:00:00-10:00",
+   "end": "2026-10-29T11:30:00-10:00",
+   "title": "Military Expo - Schofield Barracks",
+   "loc": "Schofield Barracks"
+  },
+  {
+   "start": "2026-10-29T16:00:00-10:00",
+   "end": "2026-10-29T18:00:00-10:00",
+   "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-02T09:30:00-10:00",
+   "end": "2026-11-02T10:00:00-10:00",
+   "title": "Elite Coaching",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-02T10:00:00-10:00",
+   "end": "2026-11-02T10:45:00-10:00",
+   "title": "Monday Mastery Meeting",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-03T09:15:00-10:00",
+   "end": "2026-11-03T11:15:00-10:00",
+   "title": "Lead Gen Workshop [David Hwang - Sellers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-03T11:00:00-10:00",
+   "end": "2026-11-03T14:00:00-10:00",
+   "title": "Non-talk agents only:; What the Heck is Talk?",
+   "loc": "Leahi Room & Lanai by Deck. at Queen Kapiolani Hotel"
+  },
+  {
+   "start": "2026-11-05T16:00:00-10:00",
+   "end": "2026-11-05T18:00:00-10:00",
+   "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-09T09:30:00-10:00",
+   "end": "2026-11-09T10:00:00-10:00",
+   "title": "Elite Coaching",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-09T10:00:00-10:00",
+   "end": "2026-11-09T10:45:00-10:00",
+   "title": "Monday Mastery Meeting",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-10T09:15:00-10:00",
+   "end": "2026-11-10T11:15:00-10:00",
+   "title": "Lead Gen Workshop [David Hwang - Sellers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-12T09:00:00-10:00",
+   "end": "2026-11-12T11:30:00-10:00",
+   "title": "Military Expo - Schofield Barracks",
+   "loc": "Schofield Barracks"
+  },
+  {
+   "start": "2026-11-12T16:00:00-10:00",
+   "end": "2026-11-12T18:00:00-10:00",
+   "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
+   "loc": "Zoom"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+name: refresh-scoreboard
+# Free, box-independent refresh: pulls month-to-date KPIs from Follow Up Boss (GET only) and publishes the static scoreboard
+# to GitHub Pages. If the FUB pull fails, nothing is deployed, so the last good board stays live.
+on:
+  schedule: [{ cron: "*/10 * * * *" }]   # GitHub may delay scheduled runs at busy times; typical gap 10-20 min
+  push: { branches: [main] }            # the office box pushing card state or calendar triggers an immediate refresh
+  workflow_dispatch:
+permissions: { contents: read, pages: write, id-token: write, actions: write }
+concurrency: { group: scoreboard, cancel-in-progress: false }
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: { name: github-pages, url: "${{ steps.deploy.outputs.page_url }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Pull Follow Up Boss KPIs
+        env: { FUB_API_KEY: "${{ secrets.FUB_API_KEY }}" }
+        run: python3 ci/refresh.py
+      - name: Build site folder
+        run: |
+          mkdir _site
+          cp -r index.html app.js style.css brand.css workshops.js .nojekyll fonts cards assets data _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+      - id: deploy
+        uses: actions/deploy-pages@v4
+      - name: Keep the schedule from auto-disabling after 60 quiet days
+        if: github.event_name == 'schedule'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/refresh.yml/enable" || true

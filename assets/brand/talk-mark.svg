@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" fill="none" aria-hidden="true">
+  <!-- Soft speech bubble + talk. — Brand mark v.02 -->
+  <path d="M18 12h84a14 14 0 0 1 14 14v40a14 14 0 0 1-14 14H68l-12 16-4-16H18A14 14 0 0 1 4 66V26A14 14 0 0 1 18 12Z"
+        stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/>
+  <text x="60" y="58" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="32" font-style="italic" fill="currentColor">talk.</text>
+</svg>

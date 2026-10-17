@@ -1,0 +1,46 @@
+/* Talk Realty Brand System v.02 — light mode (Paper / Cream) */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap");
+
+:root{
+  --paper:#F7F3E8;
+  --cream:#EFEADB;
+  --sage:#6B7463;
+  --forest:#3A453A;
+  --carafe:#4A3A32;
+  --chocolate:#2A201C;
+  --terracotta:#B86A4A;
+  --ink:#1A1613;
+
+  /* ranking chrome (not brand fills) */
+  --gold:#C9A227;
+  --silver:#A8A295;
+  --bronze:#A86B45;
+
+  /* semantic — LIGHT MODE (Forest/Carafe/Ink on Paper/Cream) */
+  --ink-fg:var(--forest);
+  --dim:#6B7463;
+  --line:rgba(58,69,58,.14);
+  --line-strong:rgba(58,69,58,.28);
+  --accent:var(--terracotta);
+  --live:#3A7A48;
+  --ok:#3A7A48;
+  --warn:#C9A227;
+  --bad:#B85A4A;
+  --info:#5A7A78;
+
+  --font-display:"Newsreader",Georgia,"Times New Roman",serif;
+  --font-ui:"Inter Tight",system-ui,-apple-system,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+
+  /* legacy aliases */
+  --violet:var(--sage);
+  --violet2:var(--forest);
+  --pink:var(--terracotta);
+  --blue:var(--info);
+  --grey:var(--silver);
+
+  --surface:var(--paper);
+  --surface-2:var(--cream);
+  --card-bg:rgba(255,255,255,.55);
+  --shadow:0 10px 32px rgba(42,32,28,.10);
+}

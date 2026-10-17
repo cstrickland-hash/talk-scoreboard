@@ -1,0 +1,177 @@
+{
+ "mode": "trial",
+ "timezone": "Pacific/Honolulu",
+ "trial_start": "2026-10-01T00:00:00-10:00",
+ "points": {
+  "dial": 1,
+  "conversation": 5,
+  "appointment": 20
+ },
+ "conversation_min_seconds": 120,
+ "draw_every_points": 500,
+ "first_blood_points": 100,
+ "hand_limit": 3,
+ "weekly_cutoff": {
+  "weekday": "Friday",
+  "hour": 16,
+  "minute": 0
+ },
+ "channel_name": "#sales-floor",
+ "game_name": "Talk Realty Monthly Scoreboard",
+ "game_of_the_month": "Draw Showdown",
+ "play_scope": "trial",
+ "participants": [
+  {
+   "name": "Andrea Inman",
+   "fub_user_id": 128
+  },
+  {
+   "name": "Angel Tadeo",
+   "fub_user_id": 101
+  },
+  {
+   "name": "Annie Chen",
+   "fub_user_id": 123
+  },
+  {
+   "name": "Bonnie Walker",
+   "fub_user_id": 71
+  },
+  {
+   "name": "Bruce Potter",
+   "fub_user_id": 82
+  },
+  {
+   "name": "Caixin Zhang",
+   "fub_user_id": 129
+  },
+  {
+   "name": "Chris Finateri",
+   "fub_user_id": 8
+  },
+  {
+   "name": "Christopher Strickland",
+   "fub_user_id": 60
+  },
+  {
+   "name": "Danielle Butler",
+   "fub_user_id": 51
+  },
+  {
+   "name": "David Hwang",
+   "fub_user_id": 3
+  },
+  {
+   "name": "Denia Oingerang",
+   "fub_user_id": 68
+  },
+  {
+   "name": "Devan Fenumiai",
+   "fub_user_id": 78
+  },
+  {
+   "name": "Dustin Kyle Dyer",
+   "fub_user_id": 90
+  },
+  {
+   "name": "Liz Baird",
+   "fub_user_id": 120
+  },
+  {
+   "name": "Ethan Hollandsworth",
+   "fub_user_id": 36
+  },
+  {
+   "name": "Florencia Ezcurra",
+   "fub_user_id": 73
+  },
+  {
+   "name": "Harold Daniel Perea",
+   "fub_user_id": 50
+  },
+  {
+   "name": "Jasmin Davis",
+   "fub_user_id": 70
+  },
+  {
+   "name": "Jeffrey Trimble",
+   "fub_user_id": 113
+  },
+  {
+   "name": "Jennifer Brancieri",
+   "fub_user_id": 88
+  },
+  {
+   "name": "Joey Carter Jr.",
+   "fub_user_id": 130
+  },
+  {
+   "name": "Kristina Lin",
+   "fub_user_id": 133
+  },
+  {
+   "name": "Matthew (Mateo) Ramirez",
+   "fub_user_id": 111
+  },
+  {
+   "name": "Molly Amai",
+   "fub_user_id": 125
+  },
+  {
+   "name": "Montana Martinez",
+   "fub_user_id": 117
+  },
+  {
+   "name": "Preston Varley",
+   "fub_user_id": 77
+  },
+  {
+   "name": "Sadie Leavitt",
+   "fub_user_id": 42
+  },
+  {
+   "name": "Shilo Garner",
+   "fub_user_id": 127
+  },
+  {
+   "name": "Sophia Cretu",
+   "fub_user_id": 131
+  },
+  {
+   "name": "Tiffany Kekumu",
+   "fub_user_id": 79
+  },
+  {
+   "name": "Tom Van",
+   "fub_user_id": 81
+  },
+  {
+   "name": "Tori Palmer",
+   "fub_user_id": 103
+  },
+  {
+   "name": "Tory Eborn",
+   "fub_user_id": 87
+  },
+  {
+   "name": "William Thompson",
+   "fub_user_id": 124
+  },
+  {
+   "name": "Yanina Soto",
+   "fub_user_id": 121
+  },
+  {
+   "name": "Zain Zahid",
+   "fub_user_id": 132
+  },
+  {
+   "name": "Amelia Nowell",
+   "fub_user_id": 98
+  },
+  {
+   "name": "Devin Tryan",
+   "fub_user_id": 1
+  }
+ ]
+}

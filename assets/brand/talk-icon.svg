@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <path d="M12 10h40a10 10 0 0 1 10 10v24a10 10 0 0 1-10 10H36l-8 10-2-10H12A10 10 0 0 1 2 44V20A10 10 0 0 1 12 10Z"
+        stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+  <text x="32" y="40" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="28" font-style="italic" fill="currentColor">t.</text>
+</svg>

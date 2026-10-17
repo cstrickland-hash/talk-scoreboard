@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Talk Realty Monthly Scoreboard | Live Leaderboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="style.css?v=14">
+<style>#tracker{display:none!important}.right{grid-template-rows:auto minmax(0,1fr) auto!important}</style>
+</head>
+<body>
+<div id="stage">
+  <div class="bg-orb o1"></div><div class="bg-orb o2"></div><div class="bg-orb o3"></div><div class="grid-floor"></div>
+
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><svg viewBox="0 0 120 100" fill="none"><path d="M18 12h84a14 14 0 0 1 14 14v40a14 14 0 0 1-14 14H68l-12 16-4-16H18A14 14 0 0 1 4 66V26A14 14 0 0 1 18 12Z" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><text x="60" y="58" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="32" font-style="italic" fill="currentColor">talk.</text></svg></div>
+      <div><div class="title" id="title">TALK REALTY MONTHLY SCOREBOARD</div><div class="sub" id="subtitle">DRAW SHOWDOWN</div></div>
+    </div>
+    <div class="head-mid">
+      <div class="chip" id="example-chip" hidden>EXAMPLE DATA, NOT REAL SCORES</div>
+      <div class="chip live" id="live-chip" hidden><span class="pulse"></span>LIVE</div>
+      <div class="chip trial" id="trial-chip" hidden>TRIAL MODE</div>
+      <a class="chip link" id="agent-link" href="https://talk-scoreboard.onrender.com/agent.html">MY CARDS AND RULES</a>
+    </div>
+    <div class="clock">
+      <div class="lbl">SPRINT ENDS FRIDAY 4 PM</div>
+      <div class="big" id="countdown">00:00:00</div>
+      <div class="lbl" id="synced">SYNCING</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="left">
+      <div class="podium-banner glass" id="podium"></div>
+      <div class="table glass">
+        <div class="thead"><span class="c-rank">RANK</span><span class="c-name">NAME</span><span class="c-num">DIALS</span><span class="c-num">CONVOS</span><span class="c-num">APPTS</span><span class="c-num">CARDS</span><span class="c-pts">MONTH PTS</span></div>
+        <div id="rows"></div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div id="tracker" hidden><div id="tracker-toggle"></div><span id="tracker-chev"></span><div id="hands"></div></div>
+      <div class="panel glass ws" id="workshops">
+        <div class="panel-title"><span class="dot"></span>COMPANY CALENDAR</div>
+        <div id="ws-list"></div>
+      </div>
+      <div class="panel glass grow feed" id="feedbox">
+        <div class="panel-title tg" id="feed-toggle" role="button" tabindex="0" aria-controls="feed"><span class="dot live"></span>LIVE ACTIVITY<span class="feed-sub" id="feed-sub"></span><span class="chev" id="feed-chev"></span></div>
+        <div id="feed"></div>
+      </div>
+      <div class="panel glass tracker collapsed" id="playbox">
+        <div class="panel-title tg" id="play-toggle" role="button" tabindex="0"><span class="dot hot"></span>PLAY LOG<span class="chev" id="play-chev"></span></div>
+        <div id="plays"></div>
+      </div>
+    </section>
+  </main>
+</div>
+<button type="button" id="fs-fab" aria-label="Full screen" title="Full screen">⛶ Full screen</button>
+<script src="app.js?v=16"></script>
+<script src="workshops.js?v=3"></script>
+</body>
+</html>

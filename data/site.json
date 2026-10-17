@@ -1,0 +1,281 @@
+{
+ "game_name": "Talk Realty Monthly Scoreboard",
+ "game_of_the_month": "Draw Showdown",
+ "channel": "#sales-floor",
+ "points": {
+  "dial": 1,
+  "conversation": 5,
+  "appointment": 20
+ },
+ "conversation_min_seconds": 120,
+ "draw_every_points": 500,
+ "first_blood_points": 100,
+ "podium_bonus": [
+  150,
+  75,
+  25
+ ],
+ "hand_limit": 3,
+ "card_life_hours": 48,
+ "reaction_window_minutes": 30,
+ "play_resolve_minutes": 30,
+ "play_scope": "trial",
+ "drop_rates": {
+  "buff": 0.4,
+  "sabotage": 0.4,
+  "defense_wildcard": 0.2
+ },
+ "deck": [
+  {
+   "key": "power_hour",
+   "name": "Power Hour",
+   "category": "buff",
+   "rarity": "grey",
+   "text": "2x points on all your FUB activity for the next 60 minutes.",
+   "placeholder": false
+  },
+  {
+   "key": "the_scan",
+   "name": "The Scan",
+   "category": "buff",
+   "rarity": "grey",
+   "text": "Reveal the top 2 cards of the deck to yourself. Put them back in any order.",
+   "placeholder": false
+  },
+  {
+   "key": "weekend_warrior",
+   "name": "Weekend Warrior",
+   "category": "buff",
+   "rarity": "grey",
+   "text": "Appointments set between Friday 4 PM and Monday 9 AM are worth 3x points.",
+   "placeholder": false
+  },
+  {
+   "key": "the_duel",
+   "name": "The Duel",
+   "category": "sabotage",
+   "rarity": "blue",
+   "text": "Target a rival. They must log 3 FUB conversations in 2 hours or lose 50 points to you.",
+   "placeholder": false
+  },
+  {
+   "key": "hype_tax",
+   "name": "Hype Tax",
+   "category": "sabotage",
+   "rarity": "blue",
+   "text": "Target a rival. They must post a 15 second hype video of you in Slack within 4 hours or lose their next card draw.",
+   "placeholder": false
+  },
+  {
+   "key": "mute_button",
+   "name": "Mute Button",
+   "category": "sabotage",
+   "rarity": "blue",
+   "text": "Target must only use GIFs in the Slack channel for the next 2 hours.",
+   "placeholder": false
+  },
+  {
+   "key": "cold_call_challenge",
+   "name": "Cold Call Challenge",
+   "category": "sabotage",
+   "rarity": "blue",
+   "text": "Target a rival. They must make 5 extra dials in the next hour or lose 25 points to you.",
+   "placeholder": false
+  },
+  {
+   "key": "the_shield",
+   "name": "The Shield",
+   "category": "defense",
+   "rarity": "gold",
+   "text": "Block any incoming sabotage. Play it as an instant reaction in Slack.",
+   "placeholder": false
+  },
+  {
+   "key": "uno_reverse",
+   "name": "Uno Reverse",
+   "category": "defense",
+   "rarity": "gold",
+   "text": "Block an incoming sabotage and send the exact penalty back to the attacker.",
+   "placeholder": false
+  },
+  {
+   "key": "point_swap",
+   "name": "Point Swap",
+   "category": "wildcard",
+   "rarity": "gold",
+   "text": "Swap your weekly point total with the player right above you on the leaderboard.",
+   "placeholder": false
+  },
+  {
+   "key": "double_down",
+   "name": "Double Down",
+   "category": "buff",
+   "rarity": "grey",
+   "text": "Appointments you set in the next 24 hours are worth 2x points.",
+   "placeholder": true
+  },
+  {
+   "key": "jackpot",
+   "name": "Jackpot",
+   "category": "wildcard",
+   "rarity": "gold",
+   "text": "Play it to pull one bonus card from the deck right away.",
+   "placeholder": true
+  }
+ ],
+ "mode": "trial",
+ "players": [
+  {
+   "name": "Andrea Inman",
+   "initials": "AI"
+  },
+  {
+   "name": "Angel Tadeo",
+   "initials": "AT"
+  },
+  {
+   "name": "Annie Chen",
+   "initials": "AC"
+  },
+  {
+   "name": "Bonnie Walker",
+   "initials": "BW"
+  },
+  {
+   "name": "Bruce Potter",
+   "initials": "BP"
+  },
+  {
+   "name": "Caixin Zhang",
+   "initials": "CZ"
+  },
+  {
+   "name": "Chris Finateri",
+   "initials": "CF"
+  },
+  {
+   "name": "Christopher Strickland",
+   "initials": "CS"
+  },
+  {
+   "name": "Danielle Butler",
+   "initials": "DB"
+  },
+  {
+   "name": "David Hwang",
+   "initials": "DH"
+  },
+  {
+   "name": "Denia Oingerang",
+   "initials": "DO"
+  },
+  {
+   "name": "Devan Fenumiai",
+   "initials": "DF"
+  },
+  {
+   "name": "Dustin Kyle Dyer",
+   "initials": "DD"
+  },
+  {
+   "name": "Liz Baird",
+   "initials": "LB"
+  },
+  {
+   "name": "Ethan Hollandsworth",
+   "initials": "EH"
+  },
+  {
+   "name": "Florencia Ezcurra",
+   "initials": "FE"
+  },
+  {
+   "name": "Harold Daniel Perea",
+   "initials": "HP"
+  },
+  {
+   "name": "Jasmin Davis",
+   "initials": "JD"
+  },
+  {
+   "name": "Jeffrey Trimble",
+   "initials": "JT"
+  },
+  {
+   "name": "Jennifer Brancieri",
+   "initials": "JB"
+  },
+  {
+   "name": "Joey Carter Jr.",
+   "initials": "JJ"
+  },
+  {
+   "name": "Kristina Lin",
+   "initials": "KL"
+  },
+  {
+   "name": "Matthew (Mateo) Ramirez",
+   "initials": "MR"
+  },
+  {
+   "name": "Molly Amai",
+   "initials": "MA"
+  },
+  {
+   "name": "Montana Martinez",
+   "initials": "MM"
+  },
+  {
+   "name": "Preston Varley",
+   "initials": "PV"
+  },
+  {
+   "name": "Sadie Leavitt",
+   "initials": "SL"
+  },
+  {
+   "name": "Shilo Garner",
+   "initials": "SG"
+  },
+  {
+   "name": "Sophia Cretu",
+   "initials": "SC"
+  },
+  {
+   "name": "Tiffany Kekumu",
+   "initials": "TK"
+  },
+  {
+   "name": "Tom Van",
+   "initials": "TV"
+  },
+  {
+   "name": "Tori Palmer",
+   "initials": "TP"
+  },
+  {
+   "name": "Tory Eborn",
+   "initials": "TE"
+  },
+  {
+   "name": "William Thompson",
+   "initials": "WT"
+  },
+  {
+   "name": "Yanina Soto",
+   "initials": "YS"
+  },
+  {
+   "name": "Zain Zahid",
+   "initials": "ZZ"
+  },
+  {
+   "name": "Amelia Nowell",
+   "initials": "AN"
+  },
+  {
+   "name": "Devin Tryan",
+   "initials": "DT"
+  }
+ ]
+}

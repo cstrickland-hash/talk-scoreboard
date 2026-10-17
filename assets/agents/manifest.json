@@ -1,0 +1,303 @@
+{
+  "by_name": {
+    "Christopher Strickland": "assets/agents/christopher-strickland.jpg",
+    "Chris Finateri": "assets/agents/chris-finateri.jpg",
+    "Montana Martinez": "assets/agents/montana-martinez.jpg",
+    "Jeffrey Trimble": "assets/agents/jeffrey-trimble.jpg",
+    "Devin Tryan": "assets/agents/devin-tryan.jpg",
+    "Devan Fenumiai": "assets/agents/devan-ibias-fenumiai.jpg",
+    "Andrea Inman": "assets/agents/andrea-inman.jpg",
+    "Angel Tadeo": "assets/agents/angel-tadeo.jpg",
+    "William Thompson": "assets/agents/will-thompson.jpg",
+    "Sadie Leavitt": "assets/agents/sadie-leavitt.jpg",
+    "Harold Daniel Perea": "assets/agents/daniel-perea.jpg",
+    "Joey Carter Jr.": "assets/agents/joey-carter.jpg",
+    "Denia Oingerang": "assets/agents/denia-oingerang.jpg",
+    "Molly Amai": "assets/agents/molly-amai.jpg",
+    "Tiffany Kekumu": "assets/agents/tiffany-kekumu.jpg",
+    "Yanina Soto": "assets/agents/yanina-soto.png",
+    "Bruce Potter": "assets/agents/bruce-potter.jpg",
+    "Zain Zahid": "assets/agents/zain-zahid.png",
+    "Caixin Zhang": "assets/agents/cai-zhang.png",
+    "Sophia Cretu": "assets/agents/sophia-cretu.jpg",
+    "Tom Van": "assets/agents/tom-van.jpg",
+    "Annie Chen": "assets/agents/annie-chen.png",
+    "Bonnie Walker": "assets/agents/bonnie-walker.jpg",
+    "Danielle Butler": "assets/agents/danielle-butler.jpg",
+    "David Hwang": "assets/agents/david-hwang.jpg",
+    "Dustin Kyle Dyer": "assets/agents/dustin-dyer.jpg",
+    "Ethan Hollandsworth": "assets/agents/ethan-hollandsworth.jpg",
+    "Florencia Ezcurra": "assets/agents/florencia-ezcurra.jpg",
+    "Jasmin Davis": "assets/agents/jasmin-maria-davis.jpg",
+    "Matthew (Mateo) Ramirez": "assets/agents/mateo-ramirez.jpg",
+    "Preston Varley": "assets/agents/preston-varley.jpg",
+    "Tori Palmer": "assets/agents/tori-palmer.jpg",
+    "Amelia Nowell": "assets/agents/amelia-nowell.jpg"
+  },
+  "by_name_all": {
+    "Christopher Strickland": "assets/agents/christopher-strickland.jpg",
+    "Chris Finateri": "assets/agents/chris-finateri.jpg",
+    "Montana Martinez": "assets/agents/montana-martinez.jpg",
+    "Jeffrey Trimble": "assets/agents/jeffrey-trimble.jpg",
+    "Devin Tryan": "assets/agents/devin-tryan.jpg",
+    "Devan Fenumiai": "assets/agents/devan-ibias-fenumiai.jpg",
+    "Andrea Inman": "assets/agents/andrea-inman.jpg",
+    "Angel Tadeo": "assets/agents/angel-tadeo.jpg",
+    "William Thompson": "assets/agents/will-thompson.jpg",
+    "Sadie Leavitt": "assets/agents/sadie-leavitt.jpg",
+    "Harold Daniel Perea": "assets/agents/daniel-perea.jpg",
+    "Joey Carter Jr.": "assets/agents/joey-carter.jpg",
+    "Denia Oingerang": "assets/agents/denia-oingerang.jpg",
+    "Molly Amai": "assets/agents/molly-amai.jpg",
+    "Tiffany Kekumu": "assets/agents/tiffany-kekumu.jpg",
+    "Yanina Soto": "assets/agents/yanina-soto.png",
+    "Bruce Potter": "assets/agents/bruce-potter.jpg",
+    "Zain Zahid": "assets/agents/zain-zahid.png",
+    "Caixin Zhang": "assets/agents/cai-zhang.png",
+    "Sophia Cretu": "assets/agents/sophia-cretu.jpg",
+    "Tom Van": "assets/agents/tom-van.jpg",
+    "Annie Chen": "assets/agents/annie-chen.png",
+    "Bonnie Walker": "assets/agents/bonnie-walker.jpg",
+    "Danielle Butler": "assets/agents/danielle-butler.jpg",
+    "David Hwang": "assets/agents/david-hwang.jpg",
+    "Dustin Kyle Dyer": "assets/agents/dustin-dyer.jpg",
+    "Ethan Hollandsworth": "assets/agents/ethan-hollandsworth.jpg",
+    "Florencia Ezcurra": "assets/agents/florencia-ezcurra.jpg",
+    "Jasmin Davis": "assets/agents/jasmin-maria-davis.jpg",
+    "Kristina Lin": "assets/agents/kristina-lin.jpg",
+    "Liz Baird": "assets/agents/liz-baird.jpg",
+    "Matthew (Mateo) Ramirez": "assets/agents/mateo-ramirez.jpg",
+    "Preston Varley": "assets/agents/preston-varley.jpg",
+    "Shilo Garner": "assets/agents/shilo-garner.jpg",
+    "Tori Palmer": "assets/agents/tori-palmer.jpg",
+    "Tory Eborn": "assets/agents/tory-eborn.jpg"
+  },
+  "meta": {
+    "Christopher Strickland": {
+      "path": "assets/agents/christopher-strickland.jpg",
+      "slug": "christopher-strickland",
+      "placeholder": false,
+      "bytes": 38945
+    },
+    "Chris Finateri": {
+      "path": "assets/agents/chris-finateri.jpg",
+      "slug": "chris-finateri",
+      "placeholder": false,
+      "bytes": 30204
+    },
+    "Montana Martinez": {
+      "path": "assets/agents/montana-martinez.jpg",
+      "slug": "montana-martinez",
+      "placeholder": false,
+      "bytes": 45303
+    },
+    "Jeffrey Trimble": {
+      "path": "assets/agents/jeffrey-trimble.jpg",
+      "slug": "jeffrey-trimble",
+      "placeholder": false,
+      "bytes": 40181
+    },
+    "Devin Tryan": {
+      "path": "assets/agents/devin-tryan.jpg",
+      "slug": "devin-tryan",
+      "placeholder": false,
+      "bytes": 41705
+    },
+    "Devan Fenumiai": {
+      "path": "assets/agents/devan-ibias-fenumiai.jpg",
+      "slug": "devan-ibias-fenumiai",
+      "placeholder": false,
+      "bytes": 47228
+    },
+    "Andrea Inman": {
+      "path": "assets/agents/andrea-inman.jpg",
+      "slug": "andrea-inman",
+      "placeholder": false,
+      "bytes": 38503
+    },
+    "Angel Tadeo": {
+      "path": "assets/agents/angel-tadeo.jpg",
+      "slug": "angel-tadeo",
+      "placeholder": false,
+      "bytes": 41023
+    },
+    "William Thompson": {
+      "path": "assets/agents/will-thompson.jpg",
+      "slug": "will-thompson",
+      "placeholder": false,
+      "bytes": 65807
+    },
+    "Sadie Leavitt": {
+      "path": "assets/agents/sadie-leavitt.jpg",
+      "slug": "sadie-leavitt",
+      "placeholder": false,
+      "bytes": 42214
+    },
+    "Harold Daniel Perea": {
+      "path": "assets/agents/daniel-perea.jpg",
+      "slug": "daniel-perea",
+      "placeholder": false,
+      "bytes": 42035
+    },
+    "Joey Carter Jr.": {
+      "path": "assets/agents/joey-carter.jpg",
+      "slug": "joey-carter",
+      "placeholder": false,
+      "bytes": 41936
+    },
+    "Denia Oingerang": {
+      "path": "assets/agents/denia-oingerang.jpg",
+      "slug": "denia-oingerang",
+      "placeholder": false,
+      "bytes": 32539
+    },
+    "Molly Amai": {
+      "path": "assets/agents/molly-amai.jpg",
+      "slug": "molly-amai",
+      "placeholder": false,
+      "bytes": 31320
+    },
+    "Tiffany Kekumu": {
+      "path": "assets/agents/tiffany-kekumu.jpg",
+      "slug": "tiffany-kekumu",
+      "placeholder": false,
+      "bytes": 33428
+    },
+    "Yanina Soto": {
+      "path": "assets/agents/yanina-soto.png",
+      "slug": "yanina-soto",
+      "placeholder": false,
+      "bytes": 130028
+    },
+    "Bruce Potter": {
+      "path": "assets/agents/bruce-potter.jpg",
+      "slug": "bruce-potter",
+      "placeholder": false,
+      "bytes": 21639
+    },
+    "Zain Zahid": {
+      "path": "assets/agents/zain-zahid.png",
+      "slug": "zain-zahid",
+      "placeholder": false,
+      "bytes": 129629
+    },
+    "Caixin Zhang": {
+      "path": "assets/agents/cai-zhang.png",
+      "slug": "cai-zhang",
+      "placeholder": false,
+      "bytes": 118319
+    },
+    "Sophia Cretu": {
+      "path": "assets/agents/sophia-cretu.jpg",
+      "slug": "sophia-cretu",
+      "placeholder": false,
+      "bytes": 31957
+    },
+    "Tom Van": {
+      "path": "assets/agents/tom-van.jpg",
+      "slug": "tom-van",
+      "placeholder": false,
+      "bytes": 27593
+    },
+    "Annie Chen": {
+      "path": "assets/agents/annie-chen.png",
+      "slug": "annie-chen",
+      "placeholder": false,
+      "bytes": 78587
+    },
+    "Bonnie Walker": {
+      "path": "assets/agents/bonnie-walker.jpg",
+      "slug": "bonnie-walker",
+      "placeholder": false,
+      "bytes": 53067
+    },
+    "Danielle Butler": {
+      "path": "assets/agents/danielle-butler.jpg",
+      "slug": "danielle-butler",
+      "placeholder": false,
+      "bytes": 46486
+    },
+    "David Hwang": {
+      "path": "assets/agents/david-hwang.jpg",
+      "slug": "david-hwang",
+      "placeholder": false,
+      "bytes": 34256
+    },
+    "Dustin Kyle Dyer": {
+      "path": "assets/agents/dustin-dyer.jpg",
+      "slug": "dustin-dyer",
+      "placeholder": false,
+      "bytes": 27506
+    },
+    "Ethan Hollandsworth": {
+      "path": "assets/agents/ethan-hollandsworth.jpg",
+      "slug": "ethan-hollandsworth",
+      "placeholder": false,
+      "bytes": 37981
+    },
+    "Florencia Ezcurra": {
+      "path": "assets/agents/florencia-ezcurra.jpg",
+      "slug": "florencia-ezcurra",
+      "placeholder": false,
+      "bytes": 41046
+    },
+    "Jasmin Davis": {
+      "path": "assets/agents/jasmin-maria-davis.jpg",
+      "slug": "jasmin-maria-davis",
+      "placeholder": false,
+      "bytes": 26924
+    },
+    "Kristina Lin": {
+      "path": "assets/agents/kristina-lin.jpg",
+      "slug": "kristina-lin",
+      "placeholder": true,
+      "bytes": 6829
+    },
+    "Liz Baird": {
+      "path": "assets/agents/liz-baird.jpg",
+      "slug": "liz-baird",
+      "placeholder": true,
+      "bytes": 6812
+    },
+    "Matthew (Mateo) Ramirez": {
+      "path": "assets/agents/mateo-ramirez.jpg",
+      "slug": "mateo-ramirez",
+      "placeholder": false,
+      "bytes": 39308
+    },
+    "Preston Varley": {
+      "path": "assets/agents/preston-varley.jpg",
+      "slug": "preston-varley",
+      "placeholder": false,
+      "bytes": 52235
+    },
+    "Shilo Garner": {
+      "path": "assets/agents/shilo-garner.jpg",
+      "slug": "shilo-garner",
+      "placeholder": true,
+      "bytes": 6812
+    },
+    "Tori Palmer": {
+      "path": "assets/agents/tori-palmer.jpg",
+      "slug": "tori-palmer",
+      "placeholder": false,
+      "bytes": 36651
+    },
+    "Tory Eborn": {
+      "path": "assets/agents/tory-eborn.jpg",
+      "slug": "tory-eborn",
+      "placeholder": true,
+      "bytes": 4626
+    }
+  },
+  "missing_from_site": [
+    "Jennifer Brancieri"
+  ],
+  "placeholders": [
+    "kristina-lin",
+    "liz-baird",
+    "shilo-garner",
+    "tory-eborn"
+  ],
+  "errors": []
+}
