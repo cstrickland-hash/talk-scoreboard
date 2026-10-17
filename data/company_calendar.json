@@ -1,10 +1,10 @@
 {
  "events": [
   {
-   "start": "2026-10-16T10:00:00-10:00",
-   "end": "2026-10-16T12:00:00-10:00",
-   "title": "Fill the room Call Battle",
-   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
+   "start": "2026-10-17T12:00:00-10:00",
+   "end": "2026-10-17T12:30:00-10:00",
+   "title": "Meeting",
+   "loc": "Phone"
   },
   {
    "start": "2026-10-19T09:30:00-10:00",
@@ -85,6 +85,12 @@
    "loc": "Zoom"
   },
   {
+   "start": "2026-11-03T01:00:00-10:00",
+   "end": "2026-11-03T04:00:00-10:00",
+   "title": "Talk Open House - What the Heck is Talk?",
+   "loc": "Queen Kapiolani Hotel, Waikiki"
+  },
+  {
    "start": "2026-11-03T09:15:00-10:00",
    "end": "2026-11-03T11:15:00-10:00",
    "title": "Lead Gen Workshop [David Hwang - Sellers]",
@@ -130,6 +136,18 @@
    "start": "2026-11-12T16:00:00-10:00",
    "end": "2026-11-12T18:00:00-10:00",
    "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-16T09:30:00-10:00",
+   "end": "2026-11-16T10:00:00-10:00",
+   "title": "Elite Coaching",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-16T10:00:00-10:00",
+   "end": "2026-11-16T10:45:00-10:00",
+   "title": "Monday Mastery Meeting",
    "loc": "Zoom"
   }
  ]
