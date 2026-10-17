@@ -124,7 +124,7 @@ for i, (u, s) in enumerate(rows):
 plays = ST.get("plays", [])
 lb = {"example": False, "live": True, "generated_at": iso(now), "title": cfg["game_name"], "subtitle": cfg["game_of_the_month"],
       "week_start": iso(ws), "week_end": iso(we), "month": local.strftime("%Y-%m"), "channel": cfg["channel_name"],
-      "next_sync_minutes": 10, "mode": cfg["mode"], "agents": agents, "plays": plays, "draws": [], "source": "cloud",
+      "next_sync_minutes": 15, "mode": cfg["mode"], "agents": agents, "plays": plays, "draws": [], "source": "cloud",
       "plays_note": ST.get("plays_note", "Fresh start: scoring counts from Oct 1 2026 and nobody holds a card yet. Cards are earned with points. Devin's page shows three EXAMPLE cards.")}
 
 # activity feed (last 36 h): agent first name + last initial, kind, time. No lead data.

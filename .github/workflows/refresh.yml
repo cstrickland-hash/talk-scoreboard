@@ -2,7 +2,7 @@ name: refresh-scoreboard
 # Free, box-independent refresh: pulls month-to-date KPIs from Follow Up Boss (GET only) and publishes the static scoreboard
 # to GitHub Pages. If the FUB pull fails, nothing is deployed, so the last good board stays live.
 on:
-  schedule: [{ cron: "*/10 * * * *" }]   # GitHub may delay scheduled runs at busy times; typical gap 10-20 min
+  schedule: [{ cron: "*/5 * * * *" }]    # GitHub delays/drops scheduled runs at busy times; real gap is usually 10-30 min
   push: { branches: [main] }            # the office box pushing card state or calendar triggers an immediate refresh
   workflow_dispatch:
 permissions: { contents: read, pages: write, id-token: write, actions: write }
