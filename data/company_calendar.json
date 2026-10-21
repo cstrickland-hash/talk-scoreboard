@@ -1,18 +1,6 @@
 {
  "events": [
   {
-   "start": "2026-10-20T09:15:00-10:00",
-   "end": "2026-10-20T11:15:00-10:00",
-   "title": "Lead Gen Workshop [David Hwang - Sellers]",
-   "loc": "Zoom"
-  },
-  {
-   "start": "2026-10-20T10:00:00-10:00",
-   "end": "2026-10-20T14:00:00-10:00",
-   "title": "New Agent Onboarding: Day 5",
-   "loc": "Location TBA"
-  },
-  {
    "start": "2026-10-22T10:00:00-10:00",
    "end": "2026-10-22T14:00:00-10:00",
    "title": "New Agent Onboarding: Day 6!",
@@ -82,7 +70,7 @@
    "start": "2026-11-03T11:00:00-10:00",
    "end": "2026-11-03T14:00:00-10:00",
    "title": "Non-talk agents only:; What the Heck is Talk?",
-   "loc": "Leahi Room & Lanai by Deck. at Queen Kapiolani Hotel"
+   "loc": "Leahi Room & Lanai by Deck. at Queen Kapiolani Hotel, 150 Kapahulu Ave, Honolulu, HI 96815, USA"
   },
   {
    "start": "2026-11-05T16:00:00-10:00",
@@ -94,7 +82,7 @@
    "start": "2026-11-07T10:00:00-10:00",
    "end": "2026-11-07T12:00:00-10:00",
    "title": "Magic Island Beach Clean Up !",
-   "loc": "Ala Moana Regional Park"
+   "loc": "Ala Moana Regional Park, 1201 Ala Moana Blvd, Honolulu, HI 96814, USA"
   },
   {
    "start": "2026-11-09T09:30:00-10:00",
