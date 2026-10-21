@@ -256,8 +256,9 @@
     "Liz Baird": {
       "path": "assets/agents/liz-baird.jpg",
       "slug": "liz-baird",
-      "placeholder": true,
-      "bytes": 6812
+      "placeholder": false,
+      "bytes": 24962,
+      "source": "headshot from Christopher 2026-10-21"
     },
     "Matthew (Mateo) Ramirez": {
       "path": "assets/agents/mateo-ramirez.jpg",
@@ -295,7 +296,6 @@
   ],
   "placeholders": [
     "kristina-lin",
-    "liz-baird",
     "shilo-garner",
     "tory-eborn"
   ],
