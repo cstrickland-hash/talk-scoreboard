@@ -1,12 +1,6 @@
 {
  "events": [
   {
-   "start": "2026-10-24T11:00:00-10:00",
-   "end": "2026-10-24T12:00:00-10:00",
-   "title": "Christopher Strickland's Zoom Meeting",
-   "loc": "Zoom"
-  },
-  {
    "start": "2026-10-26T09:30:00-10:00",
    "end": "2026-10-26T10:00:00-10:00",
    "title": "Elite Coaching",
@@ -147,7 +141,7 @@
   {
    "start": "2026-11-19T10:00:00-10:00",
    "end": "2026-11-19T14:00:00-10:00",
-   "title": "Onboarding Day 4",
+   "title": "New Agent Onboarding: Day 4",
    "loc": "Location TBA"
   },
   {
@@ -165,7 +159,7 @@
   {
    "start": "2026-11-23T10:00:00-10:00",
    "end": "2026-11-23T14:00:00-10:00",
-   "title": "Onboarding Day 5 ?",
+   "title": "New Agent Onboarding: Day 5",
    "loc": "Location TBA"
   },
   {
@@ -173,6 +167,18 @@
    "end": "2026-11-23T10:45:00-10:00",
    "title": "Monday Mastery Meeting",
    "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-24T09:15:00-10:00",
+   "end": "2026-11-24T11:15:00-10:00",
+   "title": "Lead Gen Workshop [David Hwang - Sellers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-24T10:00:00-10:00",
+   "end": "2026-11-24T14:00:00-10:00",
+   "title": "New Agent Onboarding: Day 6!!!!!",
+   "loc": "Location TBA"
   }
  ]
 }
