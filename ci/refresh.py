@@ -109,6 +109,63 @@ for r in ST.get("point_events", []):
     if r["counts_monthly"] and ts >= month_start: stats[r["user_id"]]["mo"] += r["points"]
     if r["counts_weekly"] and ws <= ts < we: stats[r["user_id"]]["wk"] += r["points"]
 
+# Slack-reported call overrides (max of FUB day vs Slack day). Missing file = no-op.
+# Null conversations/appointments in a report leave that metric alone.
+_slack_path = os.path.join(ROOT, "ci", "slack_call_reports.json")
+try:
+    _slack_doc = json.load(open(_slack_path))
+except FileNotFoundError:
+    _slack_doc = None
+if _slack_doc:
+    _fub_day = {}
+    for c in calls:
+        uid = c.get("userId")
+        if uid not in cand_ids: continue
+        ts = parse(c["created"]); day = ts.astimezone(TZ).strftime("%Y-%m-%d")
+        b = _fub_day.setdefault((uid, day), {"dials": 0, "convs": 0, "appts": 0})
+        dur = c.get("duration") or 0
+        if dur >= MIN_CONV: b["convs"] += 1
+        elif not c.get("isIncoming"): b["dials"] += 1
+    for a in appts:
+        uid = a.get("createdById")
+        if uid not in cand_ids: continue
+        ts = parse(a["created"]); day = ts.astimezone(TZ).strftime("%Y-%m-%d")
+        _fub_day.setdefault((uid, day), {"dials": 0, "convs": 0, "appts": 0})["appts"] += 1
+    _kind_map = [
+        ("dial", "dials", "dials", P["dial"]),
+        ("conv", "conversations", "convs", P["conversation"]),
+        ("appt", "appointments", "appts", P["appointment"]),
+    ]
+    _slack_extra = 0
+    for r in _slack_doc.get("reports", []):
+        uid = r.get("fub_user_id")
+        if uid not in stats: continue
+        day = r.get("date")
+        if not day: continue
+        try:
+            day_ts = datetime.strptime(day, "%Y-%m-%d").replace(hour=12, minute=0, second=0, tzinfo=TZ).astimezone(UTC)
+        except ValueError:
+            continue
+        fub = _fub_day.get((uid, day), {"dials": 0, "convs": 0, "appts": 0})
+        s = stats[uid]
+        for _kind, report_key, metric_key, pts_each in _kind_map:
+            reported = r.get(report_key)
+            if reported is None: continue
+            try:
+                reported = int(reported)
+            except (TypeError, ValueError):
+                continue
+            delta = reported - fub[metric_key]
+            if delta <= 0: continue
+            total_pts = delta * pts_each
+            if day_ts >= month_start: s["mo"] += total_pts
+            if ws <= day_ts < we:
+                s["wk"] += total_pts
+                s[metric_key] += delta
+            _slack_extra += delta
+    if _slack_extra:
+        print("slack_call_reports: credited", _slack_extra, "extra events across", len(_slack_doc.get("reports", [])), "reports")
+
 canon = {p["fub_user_id"]: p["name"] for p in cfg["participants"]}
 rows = [(dict(u, name=canon.get(u["id"], u["name"])), stats[u["id"]]) for u in cand]
 rows.sort(key=lambda r: (-r[1]["mo"], -r[1]["wk"], -r[1]["appts"], -r[1]["convs"], r[0]["name"]))

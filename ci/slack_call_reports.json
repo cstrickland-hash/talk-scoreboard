@@ -1,0 +1,19 @@
+{
+  "timezone": "Pacific/Honolulu",
+  "reports": [
+    {
+      "fub_user_id": 117,
+      "name": "Montana Martinez",
+      "slack_id": "U0B8GCAMQF5",
+      "date": "2026-10-28",
+      "dials": 183,
+      "conversations": null,
+      "appointments": null,
+      "message_ts": "1793224651.536849",
+      "channel_id": "D0CD0SNP41G",
+      "logged_at": "2026-10-28T12:01:56-10:00",
+      "source": "slack",
+      "note": "Montana reported 183 calls today; Christopher authorized Slack\u2192scoreboard"
+    }
+  ]
+}
