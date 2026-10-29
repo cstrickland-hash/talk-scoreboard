@@ -1,45 +1,6 @@
 {
- "timezone": "Pacific/Honolulu",
- "reports": [
-  {
-   "fub_user_id": 117,
-   "name": "Montana Martinez",
-   "slack_id": "U0B8GCAMQF5",
-   "date": "2026-10-28",
-   "dials": 359,
-   "conversations": null,
-   "appointments": null,
-   "message_ts": "1793224651.536849",
-   "channel_id": "D0CD0SNP41G",
-   "logged_at": "2026-10-28T17:20:00-10:00",
-   "source": "slack",
-   "note": "183 Slack report (noon) + 176 FUB dialer session (~5:15 PM screenshot, 4 contacts, 47:06). FUB API shows only 26 outbound dials today, so override = 359. Contacts not credited as 2+ min conversations.",
-   "sessions": [
-    {
-     "dials": 183,
-     "source": "slack",
-     "message_ts": "1793224651.536849",
-     "logged_at": "2026-10-28T12:01:56-10:00"
-    },
-    {
-     "dials": 176,
-     "contacts": 4,
-     "talk_time": "00:47:06",
-     "source": "fub_dialer_screenshot",
-     "logged_at": "2026-10-28T17:20:00-10:00"
-    }
-   ]
-  }
- ],
- "mtd_reports": [
-  {
-   "fub_user_id": 117,
-   "name": "Montana Martinez",
-   "month": "2026-10",
-   "dials": 1363,
-   "as_of": "2026-10-28T17:30:00-10:00",
-   "source": "FUB UI calls report, relayed by Christopher (t2404)",
-   "note": "Floor, not additive: includes her FUB dialer sessions and the 10-28 Slack/screenshot entries."
-  }
- ]
+  "timezone": "Pacific/Honolulu",
+  "reports": [],
+  "mtd_reports": [],
+  "removed_unverified": "2026-10-28: removed Montana 10-28 Slack 359 report and 1363 MTD floor; not matchable to FUB records (Christopher t2416u: FUB shows 171)."
 }
