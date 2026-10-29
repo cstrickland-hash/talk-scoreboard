@@ -103,6 +103,21 @@ for c in calls:
     if dur >= MIN_CONV: add(uid, "conv", ts)
     elif not c.get("isIncoming"): add(uid, "dial", ts)
     if not c.get("isIncoming") and ts >= month_start: stats[uid]["out_mo"] += 1
+# Appointment exclusions (ci/config.json "excluded_appointment_ids") + dedupe:
+# same lead + same agent + same title within 7 days counts once.
+EXCL = {int(x) for x in cfg.get("excluded_appointment_ids", [])}
+_seen = {}; appts_scored = []
+for a in sorted(appts, key=lambda a: a["created"]):
+    if a.get("id") in EXCL:
+        print(f"appt {a.get('id')} excluded by config"); continue
+    lead = next((i.get("personId") or i.get("id") for i in (a.get("invitees") or []) if i.get("personId")), None)
+    key = (a.get("createdById"), lead, (a.get("title") or "").strip().lower())
+    t = parse(a["created"])
+    if lead is not None and key in _seen and t - _seen[key] < timedelta(days=7):
+        print(f"appt {a.get('id')} deduped (same lead/agent/title within 7d)"); continue
+    if lead is not None: _seen[key] = t
+    appts_scored.append(a)
+appts = appts_scored
 for a in appts:
     uid = a.get("createdById")
     if uid in cand_ids: add(uid, "appt", parse(a["created"]))
