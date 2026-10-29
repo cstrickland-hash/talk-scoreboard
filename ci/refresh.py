@@ -57,6 +57,7 @@ def week_start(t):
     if cand > loc: cand -= timedelta(days=7)
     return cand.astimezone(UTC)
 
+DISPLAY_NAME = {"Harold Daniel Perea": "Daniel Perea"}  # public display override (goes by Daniel)
 def initials(n):
     p = n.split(); return (p[0][0] + (p[-1][0] if len(p) > 1 else "")).upper()
 def next_threshold(pts):
@@ -167,7 +168,7 @@ if _slack_doc:
         print("slack_call_reports: credited", _slack_extra, "extra events across", len(_slack_doc.get("reports", [])), "reports")
 
 canon = {p["fub_user_id"]: p["name"] for p in cfg["participants"]}
-rows = [(dict(u, name=canon.get(u["id"], u["name"])), stats[u["id"]]) for u in cand]
+rows = [(dict(u, name=DISPLAY_NAME.get(canon.get(u["id"], u["name"]), canon.get(u["id"], u["name"]))), stats[u["id"]]) for u in cand]
 rows.sort(key=lambda r: (-r[1]["mo"], -r[1]["wk"], -r[1]["appts"], -r[1]["convs"], r[0]["name"]))
 cards = ST.get("cards", {})
 agents = []
@@ -186,6 +187,7 @@ lb = {"example": False, "live": True, "generated_at": iso(now), "title": cfg["ga
 
 # activity feed (last 36 h): agent first name + last initial, kind, time. No lead data.
 def label(n):
+    n = DISPLAY_NAME.get(n, n)
     p = [w for w in n.split() if w.lower().strip(".") not in ("jr", "sr", "ii", "iii")]
     return p[0] + (" " + p[-1][0] if len(p) > 1 else "")
 names = {a["user_id"]: label(a["name"]) for a in agents}

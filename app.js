@@ -194,7 +194,7 @@
 
   const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const fmt = n => Number(n).toLocaleString("en-US");
-  function short(n) { const p = String(n).trim().split(/\s+/).filter(w => !/^(jr|sr|ii|iii)\.?$/i.test(w)); return p.length > 1 ? p[0] + " " + p[p.length - 1][0] + "." : p[0]; }
+  function short(n) { if (/^harold daniel perea$/i.test(String(n).trim())) n = "Daniel Perea"; const p = String(n).trim().split(/\s+/).filter(w => !/^(jr|sr|ii|iii)\.?$/i.test(w)); return p.length > 1 ? p[0] + " " + p[p.length - 1][0] + "." : p[0]; }
   function avatar(a, cls) {
     a = withPhoto(a);
     const g = GRADS[(a.user_id || 0) % GRADS.length];
