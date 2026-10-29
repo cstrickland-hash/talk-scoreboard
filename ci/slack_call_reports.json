@@ -1,6 +1,22 @@
 {
-  "timezone": "Pacific/Honolulu",
-  "reports": [],
-  "mtd_reports": [],
-  "removed_unverified": "2026-10-28: removed Montana 10-28 Slack 359 report and 1363 MTD floor; not matchable to FUB records (Christopher t2416u: FUB shows 171)."
+ "timezone": "Pacific/Honolulu",
+ "reports": [
+  {
+   "fub_user_id": 117,
+   "name": "Montana Martinez",
+   "date": "2026-10-28",
+   "dials": 176,
+   "conversations": null,
+   "appointments": null,
+   "additive": true,
+   "dialer": "Mojo",
+   "contacts": 4,
+   "talk_time": "00:47:06",
+   "source": "Mojo session screenshot Christopher shared Oct 28",
+   "approved_by": "Christopher t2420u",
+   "note": "Mojo is separate from FUB, so 176 dials are additive to FUB API dials. 4 contacts not credited as 2+ min conversations because their length is unknown. 1363 floor and 183 Slack report are NOT re-added."
+  }
+ ],
+ "mtd_reports": [],
+ "removed_unverified": "2026-10-28: removed Montana 10-28 Slack 359 report and 1363 MTD floor; not matchable to FUB records (Christopher t2416u: FUB shows 171)."
 }

@@ -158,7 +158,8 @@ if _slack_doc:
                 reported = int(reported)
             except (TypeError, ValueError):
                 continue
-            delta = reported - fub[metric_key]
+            # additive=True: separate dialer (e.g. Mojo) never in FUB, so count in full
+            delta = reported if r.get("additive") else reported - fub[metric_key]
             if delta <= 0: continue
             total_pts = delta * pts_each
             if day_ts >= month_start:
