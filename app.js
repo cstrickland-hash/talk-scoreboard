@@ -215,7 +215,7 @@
     const rows = agents.map((a, i) =>
       '<div class="row' + (i < 2 ? " top" : "") + '"><div><div class="rk r' + (i + 1) + '">' + String(i + 1).padStart(2, "0") + '</div></div>' +
       '<div class="nm">' + avatar(a, "avs") + "<span>" + esc(short(a.name)) + "</span>" + (a.in_game ? '<em class="in-game" title="In the card game trial">\u25C6</em>' : "") + "</div>" +
-      '<div class="num">' + fmt(a.dials) + '</div><div class="num">' + fmt(a.conversations) + '</div><div class="num">' + fmt(a.appointments) + '</div><div class="num">' + a.cards_in_hand + "/" + a.hand_limit + '</div>' +
+      '<div class="num">' + fmt(a.dials_month) + '<small style="display:block;font-size:.55em;opacity:.65">' + fmt(a.dials) + ' wk</small></div>' + '<div class="num">' + fmt(a.conversations_month) + '<small style="display:block;font-size:.55em;opacity:.65">' + fmt(a.conversations) + ' wk</small></div>' + '<div class="num">' + fmt(a.appointments_month) + '<small style="display:block;font-size:.55em;opacity:.65">' + fmt(a.appointments) + ' wk</small></div>' + '<div class="num">' + a.cards_in_hand + "/" + a.hand_limit + '</div>' +
       '<div class="pts">' + fmt(a.month_points) + '<small style="display:block;font-size:.55em;opacity:.65">' + fmt(a.weekly_points) + " wk</small></div></div>").join("");
     const box = document.getElementById("rows"), keep = box.scrollTop;
     box.innerHTML = rows || '<div class="empty-note">Waiting for the first sync</div>';

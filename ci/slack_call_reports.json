@@ -30,5 +30,16 @@
     }
    ]
   }
+ ],
+ "mtd_reports": [
+  {
+   "fub_user_id": 117,
+   "name": "Montana Martinez",
+   "month": "2026-10",
+   "dials": 1363,
+   "as_of": "2026-10-28T17:30:00-10:00",
+   "source": "FUB UI calls report, relayed by Christopher (t2404)",
+   "note": "Floor, not additive: includes her FUB dialer sessions and the 10-28 Slack/screenshot entries."
+  }
  ]
 }

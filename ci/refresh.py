@@ -89,10 +89,11 @@ def mult(uid, kind, ts):
         elif e["kind"] == "weekend_warrior" and kind == "appt": m *= 3
         elif e["kind"] == "double_down" and kind == "appt": m *= 2
     return m
-stats = {u["id"]: dict(dials=0, convs=0, appts=0, wk=0, mo=0) for u in cand}
+stats = {u["id"]: dict(dials=0, convs=0, appts=0, wk=0, mo=0, dials_mo=0, convs_mo=0, appts_mo=0, out_mo=0) for u in cand}
 def add(uid, kind, ts):
     s = stats[uid]; pts = {"dial": P["dial"], "conv": P["conversation"], "appt": P["appointment"]}[kind] * mult(uid, kind, ts)
-    if ts >= month_start: s["mo"] += pts
+    if ts >= month_start:
+        s["mo"] += pts; s[{"dial": "dials_mo", "conv": "convs_mo", "appt": "appts_mo"}[kind]] += 1
     if ws <= ts < we:
         s["wk"] += pts; s[{"dial": "dials", "conv": "convs", "appt": "appts"}[kind]] += 1
 for c in calls:
@@ -101,6 +102,7 @@ for c in calls:
     ts = parse(c["created"]); dur = c.get("duration") or 0
     if dur >= MIN_CONV: add(uid, "conv", ts)
     elif not c.get("isIncoming"): add(uid, "dial", ts)
+    if not c.get("isIncoming") and ts >= month_start: stats[uid]["out_mo"] += 1
 for a in appts:
     uid = a.get("createdById")
     if uid in cand_ids: add(uid, "appt", parse(a["created"]))
@@ -159,13 +161,27 @@ if _slack_doc:
             delta = reported - fub[metric_key]
             if delta <= 0: continue
             total_pts = delta * pts_each
-            if day_ts >= month_start: s["mo"] += total_pts
+            if day_ts >= month_start:
+                s["mo"] += total_pts; s[metric_key + "_mo"] += delta
+                if metric_key == "dials": s["out_mo"] += delta
             if ws <= day_ts < we:
                 s["wk"] += total_pts
                 s[metric_key] += delta
             _slack_extra += delta
     if _slack_extra:
         print("slack_call_reports: credited", _slack_extra, "extra events across", len(_slack_doc.get("reports", [])), "reports")
+
+# Month-to-date dial floors read from the FUB UI (dialer sessions never reach the /calls API).
+# Credit = reported MTD outbound dials - (API outbound + Slack daily credits), so nothing counts twice.
+# Extra dials have no exact timestamps: they count toward month points and month dials only.
+if _slack_doc:
+    for r in _slack_doc.get("mtd_reports", []):
+        uid = r.get("fub_user_id")
+        if uid not in stats or r.get("month") != local.strftime("%Y-%m"): continue
+        s = stats[uid]; delta = int(r.get("dials") or 0) - s["out_mo"]
+        if delta > 0:
+            s["mo"] += delta * P["dial"]; s["dials_mo"] += delta; s["out_mo"] += delta
+            print("mtd_reports: credited", delta, "dials to", uid)
 
 canon = {p["fub_user_id"]: p["name"] for p in cfg["participants"]}
 rows = [(dict(u, name=DISPLAY_NAME.get(canon.get(u["id"], u["name"]), canon.get(u["id"], u["name"]))), stats[u["id"]]) for u in cand]
@@ -177,6 +193,7 @@ for i, (u, s) in enumerate(rows):
     agents.append({"rank": i + 1, "user_id": u["id"], "name": u["name"], "initials": initials(u["name"]), "avatar": None,
                    "weekly_points": s["wk"], "month_points": s["mo"], "next_draw_at": nt, "to_next_draw": nt - s["mo"],
                    "dials": s["dials"], "conversations": s["convs"], "appointments": s["appts"],
+                   "dials_month": s["out_mo"], "conversations_month": s["convs_mo"], "appointments_month": s["appts_mo"],
                    "cards_in_hand": cc.get("hand", 0) if ing else 0, "cards_pending": cc.get("pending", 0) if ing else 0,
                    "hand_limit": cfg["hand_limit"], "in_game": ing, "example_cards": cc.get("example", 0)})
 plays = ST.get("plays", [])
