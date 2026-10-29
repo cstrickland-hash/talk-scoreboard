@@ -184,6 +184,14 @@ if _slack_doc:
             s["mo"] += delta * P["dial"]; s["dials_mo"] += delta; s["out_mo"] += delta
             print("mtd_reports: credited", delta, "dials to", uid)
 
+# Diagnostic (log only): month calls not on the board = inbound calls under the conversation threshold.
+_inb = {}
+for c in calls:
+    uid = c.get("userId")
+    if uid in cand_ids and parse(c["created"]) >= month_start and c.get("isIncoming") and (c.get("duration") or 0) < MIN_CONV:
+        _inb[uid] = _inb.get(uid, 0) + 1
+print("inbound_short_month:", json.dumps({str(k): v for k, v in sorted(_inb.items())}))
+
 canon = {p["fub_user_id"]: p["name"] for p in cfg["participants"]}
 rows = [(dict(u, name=DISPLAY_NAME.get(canon.get(u["id"], u["name"]), canon.get(u["id"], u["name"]))), stats[u["id"]]) for u in cand]
 rows.sort(key=lambda r: (-r[1]["mo"], -r[1]["wk"], -r[1]["appts"], -r[1]["convs"], r[0]["name"]))
