@@ -194,7 +194,7 @@ for i, (u, s) in enumerate(rows):
     agents.append({"rank": i + 1, "user_id": u["id"], "name": u["name"], "initials": initials(u["name"]), "avatar": None,
                    "weekly_points": s["wk"], "month_points": s["mo"], "next_draw_at": nt, "to_next_draw": nt - s["mo"],
                    "dials": s["dials"], "conversations": s["convs"], "appointments": s["appts"],
-                   "dials_month": s["out_mo"], "conversations_month": s["convs_mo"], "appointments_month": s["appts_mo"],
+                   "dials_month": s["dials_mo"], "conversations_month": s["convs_mo"], "appointments_month": s["appts_mo"],
                    "cards_in_hand": cc.get("hand", 0) if ing else 0, "cards_pending": cc.get("pending", 0) if ing else 0,
                    "hand_limit": cfg["hand_limit"], "in_game": ing, "example_cards": cc.get("example", 0)})
 plays = ST.get("plays", [])

@@ -1,6 +1,77 @@
 {
- "generated_at": "2026-10-29T03:35:14Z",
+ "generated_at": "2026-10-29T03:54:11Z",
  "events": [
+  {
+   "ts": "2026-10-29T03:53:32Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:53:09Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:52:31Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:51:38Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:47:48Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:46:44Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:45:59Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:45:12Z",
+   "name": "Christopher S",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:44:18Z",
+   "name": "Joey C",
+   "kind": "conversation",
+   "minutes": 4
+  },
+  {
+   "ts": "2026-10-29T03:44:15Z",
+   "name": "Christopher S",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:43:29Z",
+   "name": "Christopher S",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:43:18Z",
+   "name": "Christopher S",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:39:43Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:39:26Z",
+   "name": "Joey C",
+   "kind": "call"
+  },
   {
    "ts": "2026-10-29T03:32:47Z",
    "name": "Joey C",
@@ -87,6 +158,12 @@
    "ts": "2026-10-29T03:19:11Z",
    "name": "Amelia N",
    "kind": "call"
+  },
+  {
+   "ts": "2026-10-29T03:19:05Z",
+   "name": "Chad S",
+   "kind": "conversation",
+   "minutes": 12
   },
   {
    "ts": "2026-10-29T03:18:08Z",
@@ -226,81 +303,6 @@
   {
    "ts": "2026-10-29T03:02:07Z",
    "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T03:01:14Z",
-   "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T03:00:31Z",
-   "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:59:39Z",
-   "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:59:17Z",
-   "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:57:36Z",
-   "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:56:35Z",
-   "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:55:09Z",
-   "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:54:54Z",
-   "name": "Joey C",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:51:14Z",
-   "name": "Christopher S",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:50:42Z",
-   "name": "Christopher S",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:49:31Z",
-   "name": "Christopher S",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:48:39Z",
-   "name": "Christopher S",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:47:55Z",
-   "name": "Christopher S",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:47:21Z",
-   "name": "Christopher S",
-   "kind": "call"
-  },
-  {
-   "ts": "2026-10-29T02:46:42Z",
-   "name": "Christopher S",
    "kind": "call"
   }
  ]
