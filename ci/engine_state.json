@@ -1,21 +1,5 @@
 {
- "activity_extra": [
-  {
-   "kind": "escrow",
-   "name": "Jasmin D",
-   "ts": "2026-10-29T03:12:09Z"
-  },
-  {
-   "kind": "escrow",
-   "name": "Montana M",
-   "ts": "2026-10-29T03:12:09Z"
-  },
-  {
-   "kind": "escrow",
-   "name": "Daniel P",
-   "ts": "2026-10-29T03:12:09Z"
-  }
- ],
+ "activity_extra": [],
  "cards": {
   "1": {
    "example": 3,
