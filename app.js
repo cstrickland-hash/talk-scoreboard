@@ -8,7 +8,7 @@
   const GRADS = [["#6B7463", "#3A453A"], ["#B86A4A", "#4A3A32"], ["#8FA3A0", "#3A453A"], ["#C9A227", "#4A3A32"], ["#7BA87A", "#3A453A"], ["#A86B45", "#2A201C"], ["#B7B0A3", "#4A3A32"], ["#6B7463", "#B86A4A"]];
   let current = null;
   let PHOTO_BY_NAME = {};
-  fetch("assets/agents/photos.json?v=16").then(r => r.json()).then(d => {
+  fetch("assets/agents/photos.json?v=17").then(r => r.json()).then(d => {
     PHOTO_BY_NAME = d.photos || {};
     if (current) { renderPodium(current.agents); renderRows(current.agents); renderHands(current, null); }
   }).catch(() => {});
