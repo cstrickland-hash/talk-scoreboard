@@ -1,18 +1,6 @@
 {
  "events": [
   {
-   "start": "2026-10-29T09:00:00-10:00",
-   "end": "2026-10-29T11:30:00-10:00",
-   "title": "Military Expo - Schofield Barracks",
-   "loc": "Schofield Barracks"
-  },
-  {
-   "start": "2026-10-29T16:00:00-10:00",
-   "end": "2026-10-29T18:00:00-10:00",
-   "title": "Pizza Gen Workshop (& halloween treats)",
-   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
-  },
-  {
    "start": "2026-11-02T09:30:00-10:00",
    "end": "2026-11-02T10:00:00-10:00",
    "title": "Elite Coaching",
@@ -185,6 +173,18 @@
    "end": "2026-11-26T18:00:00-10:00",
    "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
    "loc": "Zoom"
+  },
+  {
+   "start": "2026-11-29T12:15:00-10:00",
+   "end": "2026-11-29T21:45:00-10:00",
+   "title": "Party Planning Committee Potential Holiday Party",
+   "loc": "Location TBA"
+  },
+  {
+   "start": "2026-11-29T17:00:00-10:00",
+   "end": "2026-11-29T21:30:00-10:00",
+   "title": "Holiday Party!",
+   "loc": "Kailana Chapel (Aloha Aina Weddings & Events by Best Bridal Hawaii), 41-202 Kalaniana\u02bbole Hwy, Waimanalo, HI 96795, USA"
   }
  ]
 }
