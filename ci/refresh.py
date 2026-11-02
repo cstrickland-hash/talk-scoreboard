@@ -86,7 +86,7 @@ def mult(uid, kind, ts):
     for e in EFFECTS:
         if e["user_id"] != uid or not (e["starts_at"] <= t < e["ends_at"]): continue
         if e["kind"] == "power_hour": m *= 2
-        elif e["kind"] == "weekend_warrior" and kind == "appt": m *= 3
+        # weekend_warrior 3x removed Nov 2 2026 (Christopher): weekends score at standard points
         elif e["kind"] == "double_down" and kind == "appt": m *= 2
     return m
 stats = {u["id"]: dict(dials=0, convs=0, appts=0, wk=0, mo=0, dials_mo=0, convs_mo=0, appts_mo=0, out_mo=0) for u in cand}
