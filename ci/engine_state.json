@@ -1,11 +1,5 @@
 {
- "activity_extra": [
-  {
-   "kind": "escrow",
-   "name": "Chris F",
-   "ts": "2026-11-03T03:12:13Z"
-  }
- ],
+ "activity_extra": [],
  "cards": {
   "1": {
    "example": 3,
