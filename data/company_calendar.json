@@ -1,24 +1,6 @@
 {
  "events": [
   {
-   "start": "2026-11-03T01:00:00-10:00",
-   "end": "2026-11-03T04:00:00-10:00",
-   "title": "Talk Open House - What the Heck is Talk?",
-   "loc": "Queen Kapiolani Hotel, Waikiki"
-  },
-  {
-   "start": "2026-11-03T09:15:00-10:00",
-   "end": "2026-11-03T11:15:00-10:00",
-   "title": "Lead Gen Workshop [David Hwang - Sellers]",
-   "loc": "Zoom"
-  },
-  {
-   "start": "2026-11-03T11:00:00-10:00",
-   "end": "2026-11-03T14:00:00-10:00",
-   "title": "Non-talk agents only:; What the Heck is Talk?",
-   "loc": "Leahi Room & Lanai by Deck. at Queen Kapiolani Hotel, 150 Kapahulu Ave, Honolulu, HI 96815, USA"
-  },
-  {
    "start": "2026-11-05T16:00:00-10:00",
    "end": "2026-11-05T18:00:00-10:00",
    "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
@@ -190,6 +172,12 @@
    "start": "2026-12-01T09:15:00-10:00",
    "end": "2026-12-01T11:15:00-10:00",
    "title": "Lead Gen Workshop [David Hwang - Sellers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-12-03T16:00:00-10:00",
+   "end": "2026-12-03T18:00:00-10:00",
+   "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
    "loc": "Zoom"
   }
  ]
