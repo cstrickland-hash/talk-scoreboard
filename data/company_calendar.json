@@ -21,8 +21,8 @@
   {
    "start": "2026-11-10T10:00:00-10:00",
    "end": "2026-11-10T14:00:00-10:00",
-   "title": "Onboarding Day 1",
-   "loc": "Location TBA"
+   "title": "New Agent Onboarding Day 1 !",
+   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
   },
   {
    "start": "2026-11-11T12:00:00-10:00",
@@ -39,8 +39,8 @@
   {
    "start": "2026-11-12T10:00:00-10:00",
    "end": "2026-11-12T14:00:00-10:00",
-   "title": "Onboarding Day 2",
-   "loc": "Location TBA"
+   "title": "New Agent Onboarding: Day 2",
+   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
   },
   {
    "start": "2026-11-12T16:00:00-10:00",
@@ -75,14 +75,14 @@
   {
    "start": "2026-11-17T10:00:00-10:00",
    "end": "2026-11-17T14:00:00-10:00",
-   "title": "Onboarding Day 3",
-   "loc": "Location TBA"
+   "title": "New Agent Onboarding: Day 3!",
+   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
   },
   {
    "start": "2026-11-19T10:00:00-10:00",
    "end": "2026-11-19T14:00:00-10:00",
-   "title": "New Agent Onboarding: Day 4",
-   "loc": "Location TBA"
+   "title": "New Agent Onboarding: Day 4!",
+   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
   },
   {
    "start": "2026-11-19T16:00:00-10:00",
@@ -99,8 +99,8 @@
   {
    "start": "2026-11-23T10:00:00-10:00",
    "end": "2026-11-23T14:00:00-10:00",
-   "title": "New Agent Onboarding: Day 5",
-   "loc": "Location TBA"
+   "title": "New Agent Onboarding: Day 5!",
+   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
   },
   {
    "start": "2026-11-23T10:00:00-10:00",
@@ -118,7 +118,7 @@
    "start": "2026-11-24T10:00:00-10:00",
    "end": "2026-11-24T14:00:00-10:00",
    "title": "New Agent Onboarding: Day 6!!!!!",
-   "loc": "Location TBA"
+   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
   },
   {
    "start": "2026-11-25T12:00:00-10:00",
@@ -172,6 +172,18 @@
    "start": "2026-12-03T16:00:00-10:00",
    "end": "2026-12-03T18:00:00-10:00",
    "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-12-07T09:30:00-10:00",
+   "end": "2026-12-07T10:00:00-10:00",
+   "title": "Elite Coaching",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-12-07T10:00:00-10:00",
+   "end": "2026-12-07T10:45:00-10:00",
+   "title": "Monday Mastery Meeting",
    "loc": "Zoom"
   }
  ]
