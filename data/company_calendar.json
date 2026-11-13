@@ -1,24 +1,6 @@
 {
  "events": [
   {
-   "start": "2026-11-12T09:00:00-10:00",
-   "end": "2026-11-12T11:30:00-10:00",
-   "title": "Military Expo - Schofield Barracks",
-   "loc": "Schofield Barracks"
-  },
-  {
-   "start": "2026-11-12T10:00:00-10:00",
-   "end": "2026-11-12T14:00:00-10:00",
-   "title": "New Agent Onboarding: Day 2",
-   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
-  },
-  {
-   "start": "2026-11-12T16:00:00-10:00",
-   "end": "2026-11-12T18:00:00-10:00",
-   "title": "Pot luck in office Lead Gen Workshop [Chris Strickland - Buyers]",
-   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
-  },
-  {
    "start": "2026-11-14T09:00:00-10:00",
    "end": "2026-11-14T11:00:00-10:00",
    "title": "Media Hike / Clean Up: Manoa Falls !! (Read Description)",
@@ -161,6 +143,12 @@
    "end": "2026-12-08T11:15:00-10:00",
    "title": "Lead Gen Workshop [David Hwang - Sellers]",
    "loc": "Zoom"
+  },
+  {
+   "start": "2026-12-08T12:00:00-10:00",
+   "end": "2026-12-08T15:00:00-10:00",
+   "title": "Contract Training in office!",
+   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
   },
   {
    "start": "2026-12-09T12:00:00-10:00",
