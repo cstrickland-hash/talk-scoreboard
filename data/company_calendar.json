@@ -1,12 +1,6 @@
 {
  "events": [
   {
-   "start": "2026-11-14T09:30:00-10:00",
-   "end": "2026-11-14T10:00:00-10:00",
-   "title": "Meeting",
-   "loc": "Phone"
-  },
-  {
    "start": "2026-11-16T09:30:00-10:00",
    "end": "2026-11-16T10:00:00-10:00",
    "title": "Elite Coaching",
@@ -178,6 +172,12 @@
    "start": "2026-12-14T10:00:00-10:00",
    "end": "2026-12-14T10:45:00-10:00",
    "title": "Monday Mastery Meeting",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-12-15T09:15:00-10:00",
+   "end": "2026-12-15T11:15:00-10:00",
+   "title": "Lead Gen Workshop [David Hwang - Sellers]",
    "loc": "Zoom"
   }
  ]
