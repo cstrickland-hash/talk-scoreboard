@@ -1,7 +1,10 @@
 name: Keep Task Desk awake
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    # Every 15 minutes, 7:00 AM through 8:45 PM HST (UTC-10)
+    - cron: "*/15 17-23,0-6 * * *"
+    # 9:00 PM HST
+    - cron: "0 7 * * *"
   workflow_dispatch:
 jobs:
   ping:

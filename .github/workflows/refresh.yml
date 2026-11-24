@@ -1,34 +1,140 @@
 name: refresh-scoreboard
-# Free, box-independent refresh: pulls month-to-date KPIs from Follow Up Boss (GET only) and publishes the static scoreboard
+# Pulls month-to-date KPIs from Follow Up Boss (GET only) and publishes the static scoreboard
 # to GitHub Pages. If the FUB pull fails, nothing is deployed, so the last good board stays live.
+# Scheduled every 30 minutes from 7:00 AM to 8:00 PM HST. Pages deploys are retried, skipped when
+# KPIs have not changed, and a failed deploy after retries emails at most once per Hawaii day.
 on:
-  schedule: [{ cron: "*/5 * * * *" }]    # GitHub delays/drops scheduled runs at busy times; real gap is usually 10-30 min
-  push: { branches: [main] }            # the office box pushing card state or calendar triggers an immediate refresh
+  schedule:
+    # 7:00 AM–7:30 PM HST (UTC-10)
+    - cron: "0,30 17-23,0-5 * * *"
+    # 8:00 PM HST
+    - cron: "0 6 * * *"
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions: { contents: read, pages: write, id-token: write, actions: write }
-concurrency: { group: scoreboard, cancel-in-progress: false }
+concurrency: { group: scoreboard, cancel-in-progress: true }
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    environment: { name: github-pages, url: "${{ steps.deploy.outputs.page_url }}" }
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url || steps.retry1.outputs.page_url || steps.retry2.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - name: Pull Follow Up Boss KPIs
-        env: { FUB_API_KEY: "${{ secrets.FUB_API_KEY }}" }
+        env:
+          FUB_API_KEY: ${{ secrets.FUB_API_KEY }}
         run: python3 ci/refresh.py
+      - name: Decide whether to deploy
+        id: gate
+        run: |
+          python3 <<'PY'
+          import json, os, subprocess
+
+          def load_work(path):
+              with open(path) as fh:
+                  return json.load(fh)
+
+          def load_head(path):
+              r = subprocess.run(["git", "show", f"HEAD:{path}"], capture_output=True, text=True)
+              if r.returncode != 0 or not r.stdout.strip():
+                  return None
+              return json.loads(r.stdout)
+
+          def norm(obj):
+              if isinstance(obj, dict):
+                  return {k: norm(v) for k, v in obj.items() if k != "generated_at"}
+              if isinstance(obj, list):
+                  return [norm(x) for x in obj]
+              return obj
+
+          event = os.environ.get("GITHUB_EVENT_NAME", "")
+          # Pushes (card/calendar state) and manual runs always publish.
+          # Scheduled runs skip the Pages deploy when KPIs are unchanged aside from generated_at.
+          deploy = True
+          reason = event
+          if event == "schedule":
+              deploy = False
+              reason = "unchanged"
+              for path in ("data/leaderboard.json", "data/activity.json"):
+                  old, new = load_head(path), load_work(path)
+                  if old is None or norm(old) != norm(new):
+                      deploy = True
+                      reason = f"{path} changed"
+                      break
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"deploy={'true' if deploy else 'false'}\n")
+          print(f"deploy={deploy} reason={reason}")
+          PY
       - name: Build site folder
+        if: steps.gate.outputs.deploy == 'true'
         run: |
           mkdir _site
           cp -r index.html app.js style.css brand.css workshops.js .nojekyll fonts cards assets data _site/
       - uses: actions/configure-pages@v5
+        if: steps.gate.outputs.deploy == 'true'
       - uses: actions/upload-pages-artifact@v3
-        with: { path: _site }
+        if: steps.gate.outputs.deploy == 'true'
+        with:
+          path: _site
+      - name: Wait for artifact to be listed
+        if: steps.gate.outputs.deploy == 'true'
+        run: sleep 20
       - id: deploy
+        if: steps.gate.outputs.deploy == 'true'
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Wait before first retry
+        if: steps.gate.outputs.deploy == 'true' && steps.deploy.outcome == 'failure'
+        run: sleep 25
+      - id: retry1
+        if: steps.gate.outputs.deploy == 'true' && steps.deploy.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Wait before second retry
+        if: steps.gate.outputs.deploy == 'true' && steps.deploy.outcome == 'failure' && steps.retry1.outcome == 'failure'
+        run: sleep 40
+      - id: retry2
+        if: steps.gate.outputs.deploy == 'true' && steps.deploy.outcome == 'failure' && steps.retry1.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Fail at most once per Hawaii day
+        if: steps.gate.outputs.deploy == 'true' && steps.deploy.outcome == 'failure' && steps.retry1.outcome == 'failure' && steps.retry2.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TODAY=$(TZ=Pacific/Honolulu date +%F)
+          export TODAY
+          COUNT=$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/refresh.yml/runs?status=failure&per_page=30" \
+            | python3 -c '
+          import json, os, sys
+          from datetime import datetime, timedelta, timezone
+          HST = timezone(timedelta(hours=-10))
+          today = os.environ["TODAY"]
+          run_id = int(os.environ["GITHUB_RUN_ID"])
+          data = json.load(sys.stdin)
+          n = 0
+          for r in data.get("workflow_runs", []):
+              if r.get("id") == run_id:
+                  continue
+              created = datetime.fromisoformat(r["created_at"].replace("Z", "+00:00")).astimezone(HST)
+              if created.strftime("%Y-%m-%d") == today:
+                  n += 1
+          print(n)
+          ')
+          echo "Other failed refreshes today (HST $TODAY): ${COUNT:-0}"
+          if [ "${COUNT:-0}" -gt 0 ]; then
+            echo "A refresh already failed earlier today; succeeding this job so GitHub does not send another email."
+            exit 0
+          fi
+          echo "This is the first failure today after retries. Failing the job so one email is sent."
+          exit 1
       - name: Keep the schedule from auto-disabling after 60 quiet days
         if: github.event_name == 'schedule'
-        env: { GH_TOKEN: "${{ github.token }}" }
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/refresh.yml/enable" || true
