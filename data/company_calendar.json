@@ -1,24 +1,6 @@
 {
  "events": [
   {
-   "start": "2026-11-23T09:30:00-10:00",
-   "end": "2026-11-23T10:00:00-10:00",
-   "title": "Elite Coaching",
-   "loc": "Zoom"
-  },
-  {
-   "start": "2026-11-23T10:00:00-10:00",
-   "end": "2026-11-23T14:00:00-10:00",
-   "title": "New Agent Onboarding: Day 5!",
-   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
-  },
-  {
-   "start": "2026-11-23T10:00:00-10:00",
-   "end": "2026-11-23T10:45:00-10:00",
-   "title": "Monday Mastery Meeting",
-   "loc": "Zoom"
-  },
-  {
    "start": "2026-11-24T09:15:00-10:00",
    "end": "2026-11-24T11:15:00-10:00",
    "title": "Lead Gen Workshop [David Hwang - Sellers]",
@@ -172,6 +154,18 @@
    "start": "2026-12-23T12:00:00-10:00",
    "end": "2026-12-23T13:00:00-10:00",
    "title": "L10 Meeting",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-12-24T09:00:00-10:00",
+   "end": "2026-12-24T11:30:00-10:00",
+   "title": "Military Expo - Schofield Barracks",
+   "loc": "Schofield Barracks"
+  },
+  {
+   "start": "2026-12-24T16:00:00-10:00",
+   "end": "2026-12-24T18:00:00-10:00",
+   "title": "Lead Gen Workshop [Chris Strickland - Buyers]",
    "loc": "Zoom"
   }
  ]
