@@ -1,20 +1,8 @@
 {
  "events": [
   {
-   "start": "2026-11-24T09:15:00-10:00",
-   "end": "2026-11-24T11:15:00-10:00",
-   "title": "Lead Gen Workshop [David Hwang - Sellers]",
-   "loc": "Zoom"
-  },
-  {
-   "start": "2026-11-24T10:00:00-10:00",
-   "end": "2026-11-24T14:00:00-10:00",
-   "title": "New Agent Onboarding: Day 6!!!!!",
-   "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
-  },
-  {
-   "start": "2026-11-25T12:00:00-10:00",
-   "end": "2026-11-25T13:00:00-10:00",
+   "start": "2026-11-25T10:00:00-10:00",
+   "end": "2026-11-25T11:00:00-10:00",
    "title": "L10 Meeting",
    "loc": "Zoom"
   },
@@ -91,12 +79,6 @@
    "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
   },
   {
-   "start": "2026-12-09T12:00:00-10:00",
-   "end": "2026-12-09T13:00:00-10:00",
-   "title": "L10 Meeting",
-   "loc": "Zoom"
-  },
-  {
    "start": "2026-12-10T09:00:00-10:00",
    "end": "2026-12-10T11:30:00-10:00",
    "title": "Military Expo - Schofield Barracks",
@@ -148,12 +130,6 @@
    "start": "2026-12-22T09:15:00-10:00",
    "end": "2026-12-22T11:15:00-10:00",
    "title": "Lead Gen Workshop [David Hwang - Sellers]",
-   "loc": "Zoom"
-  },
-  {
-   "start": "2026-12-23T12:00:00-10:00",
-   "end": "2026-12-23T13:00:00-10:00",
-   "title": "L10 Meeting",
    "loc": "Zoom"
   },
   {
