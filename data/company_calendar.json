@@ -1,12 +1,6 @@
 {
  "events": [
   {
-   "start": "2026-11-25T10:00:00-10:00",
-   "end": "2026-11-25T11:00:00-10:00",
-   "title": "L10 Meeting",
-   "loc": "Zoom"
-  },
-  {
    "start": "2026-11-26T09:00:00-10:00",
    "end": "2026-11-26T11:30:00-10:00",
    "title": "Military Expo - Schofield Barracks",
@@ -67,6 +61,12 @@
    "loc": "Zoom"
   },
   {
+   "start": "2026-12-07T12:00:00-10:00",
+   "end": "2026-12-07T13:30:00-10:00",
+   "title": "Talk Realty L10 Meeting",
+   "loc": "Zoom"
+  },
+  {
    "start": "2026-12-08T09:15:00-10:00",
    "end": "2026-12-08T11:15:00-10:00",
    "title": "Lead Gen Workshop [David Hwang - Sellers]",
@@ -77,6 +77,12 @@
    "end": "2026-12-08T15:00:00-10:00",
    "title": "Contract Training in office!",
    "loc": "2752 Woodlawn Dr, Honolulu, HI 96822, USA"
+  },
+  {
+   "start": "2026-12-09T17:00:00-10:00",
+   "end": "2026-12-09T17:30:00-10:00",
+   "title": "Meeting",
+   "loc": "Phone"
   },
   {
    "start": "2026-12-10T09:00:00-10:00",
@@ -103,6 +109,12 @@
    "loc": "Zoom"
   },
   {
+   "start": "2026-12-14T12:00:00-10:00",
+   "end": "2026-12-14T13:30:00-10:00",
+   "title": "Talk Realty L10 Meeting",
+   "loc": "Zoom"
+  },
+  {
    "start": "2026-12-15T09:15:00-10:00",
    "end": "2026-12-15T11:15:00-10:00",
    "title": "Lead Gen Workshop [David Hwang - Sellers]",
@@ -124,6 +136,12 @@
    "start": "2026-12-21T10:00:00-10:00",
    "end": "2026-12-21T10:45:00-10:00",
    "title": "Monday Mastery Meeting",
+   "loc": "Zoom"
+  },
+  {
+   "start": "2026-12-21T12:00:00-10:00",
+   "end": "2026-12-21T13:30:00-10:00",
+   "title": "Talk Realty L10 Meeting",
    "loc": "Zoom"
   },
   {
